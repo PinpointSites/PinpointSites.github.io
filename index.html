@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinpoint Sites | Websites for Local Businesses</title>
+<meta name="description" content="Fast, mobile-first websites for home service businesses that turn visitors into booked jobs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0d0d10;--surface:#16161b;--ink:#f2f2f5;--muted:#9a9aa8;--line:#26262e;--accent:#7c6cff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:"Inter",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+  .logo{font-weight:800;font-size:1.15rem}
+  .logo span{color:var(--accent)}
+  .btn{display:inline-block;padding:12px 22px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600;font-size:.95rem;margin-bottom:8px}
+  .btn:hover{filter:brightness(1.1)}
+  .btn.ghost{background:transparent;border:1px solid #3a3a46}
+  .hero{padding:80px 0 56px}
+  .hero h1{font-size:clamp(2.4rem,6vw,4.2rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;max-width:17ch}
+  .hero h1 span{color:var(--accent)}
+  .hero p{color:var(--muted);font-size:1.15rem;max-width:36rem;margin:22px 0 32px}
+  h2{font-size:1.8rem;font-weight:800;letter-spacing:-.02em;margin-bottom:24px}
+  section{padding:48px 0}
+
+  .feature + .feature{margin-top:20px}
+  .feature{display:grid;grid-template-columns:1.3fr 1fr;background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden}
+  .feature .shot{position:relative;min-height:340px;overflow:hidden;border-right:1px solid var(--line);background:#fff}
+  .feature .shot iframe{position:absolute;top:0;left:0;width:1280px;height:1000px;border:0;transform-origin:0 0;pointer-events:none}
+  .feature .body{padding:36px;display:flex;flex-direction:column;justify-content:center}
+  .feature h3{font-size:1.5rem}
+  .feature .sub{color:var(--muted);margin:4px 0 18px}
+  .feature ul{list-style:none;display:grid;gap:8px;margin-bottom:24px;color:#d4d4de;font-size:.95rem}
+  .feature li::before{content:"✓  ";color:var(--accent);font-weight:700}
+
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .stat b{display:block;font-size:2rem;font-weight:800;color:var(--accent)}
+  .stat span{color:var(--muted);font-size:.92rem}
+  .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .f{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+  .f b{display:block;margin-bottom:6px}
+  .f span{color:var(--muted);font-size:.9rem}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+  .step{border-top:2px solid var(--accent);padding-top:16px}
+  .step::before{counter-increment:s;content:"0" counter(s);color:var(--accent);font-weight:800;font-size:.9rem}
+  .step b{display:block;margin:6px 0 4px}
+  .step span{color:var(--muted);font-size:.9rem}
+  .cta{margin:48px 0 80px;background:linear-gradient(135deg,#2a2160,#16161b);border:1px solid var(--line);border-radius:24px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+  .cta h2{margin:0}
+  .cta p{color:var(--muted);margin-top:6px}
+  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.85rem}
+  @media (max-width:860px){
+    .feature{grid-template-columns:minmax(0,1fr)}
+    .feature .shot{min-height:240px;border-right:0;border-bottom:1px solid var(--line)}
+    .feature .body{padding:26px}
+    .stats{grid-template-columns:1fr}
+    .features,.steps{grid-template-columns:1fr 1fr}
+    .cta{padding:32px 22px}
+    .hero{padding:48px 0 32px}
+  }
+  @media (max-width:480px){.features,.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">Pinpoint<span>Sites</span></a><a class="btn" href="#contact" style="margin:0">Get a Quote</a></div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Websites that turn visitors into <span>booked jobs.</span></h1>
+    <p>I build fast, mobile-first websites for plumbers, HVAC companies, dentists and other local businesses. Built to make the phone ring, not just to look nice.</p>
+    <a class="btn" href="#work">View My Work</a>
+    <a class="btn ghost" href="preview.html">Desktop + Mobile Preview</a>
+  </div>
+
+  <section id="work">
+    <h2>Recent work</h2>
+    <a class="feature" href="plumber/index.html">
+      <div class="shot"><iframe src="plumber/index.html" tabindex="-1" title="Ridgeline Plumbing preview" loading="lazy"></iframe></div>
+      <div class="body">
+        <h3>Ridgeline Plumbing & Air</h3>
+        <div class="sub">Plumbing & HVAC · Austin, TX</div>
+        <ul>
+          <li>Click-to-call in header and sticky mobile bar</li>
+          <li>Free-estimate form above the fold</li>
+          <li>Coupons and financing to boost conversions</li>
+          <li>Trust badges, reviews and service-area page</li>
+        </ul>
+        <span class="btn">Open Live Site →</span>
+      </div>
+    </a>
+    <a class="feature" href="dental/index.html">
+      <div class="shot"><iframe src="dental/index.html" tabindex="-1" title="Bright Harbor Dental preview" loading="lazy"></iframe></div>
+      <div class="body">
+        <h3>Bright Harbor Dental</h3>
+        <div class="sub">Family & cosmetic dentistry · Scottsdale, AZ</div>
+        <ul>
+          <li>4-step online booking with date & time picker</li>
+          <li>$99 new-patient offer to drive first visits</li>
+          <li>Insurance & membership plan section</li>
+          <li>Dentist bio, smile gallery and reviews to build trust</li>
+        </ul>
+        <span class="btn">Open Live Site →</span>
+      </div>
+    </a>
+  </section>
+
+  <section>
+    <h2>Why it matters</h2>
+    <div class="stats">
+      <div class="stat"><b>60%+</b><span>of local service searches happen on a phone, so the site is designed mobile-first.</span></div>
+      <div class="stat"><b>&lt; 2s</b><span>load time. Slow sites lose visitors before they ever see your phone number.</span></div>
+      <div class="stat"><b>1 tap</b><span>to call or request a quote from any page.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Included with every site</h2>
+    <div class="features">
+      <div class="f"><b>📱 Mobile-first</b><span>Designed for the phone first, then scaled up to desktop.</span></div>
+      <div class="f"><b>⚡ Lightning fast</b><span>Lean code with no bloated page builders.</span></div>
+      <div class="f"><b>📞 Lead capture</b><span>Call buttons and quote forms sent straight to your inbox or CRM.</span></div>
+      <div class="f"><b>🔍 Local SEO ready</b><span>Proper titles, schema and Google Business Profile setup.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><b>Discovery call</b><span>15 minutes to learn about your business and goals.</span></div>
+      <div class="step"><b>First draft</b><span>See a working draft within a few days, not weeks.</span></div>
+      <div class="step"><b>Revisions</b><span>We refine it together until you love it.</span></div>
+      <div class="step"><b>Launch</b><span>Connected to your domain and live on the web.</span></div>
+    </div>
+  </section>
+
+  <div class="cta" id="contact">
+    <div><h2>Need a website that brings in calls?</h2><p>Message me on Upwork with your business name and I'll send a free mockup.</p></div>
+  </div>
+</main>
+
+<footer><div class="wrap">© 2026 Pinpoint Sites · Sample projects use fictional business details.</div></footer>
+
+<script>
+  // Scale the live site thumbnail to the card width
+  document.querySelectorAll('.shot').forEach(shot => {
+    const fr = shot.querySelector('iframe');
+    new ResizeObserver(() => { fr.style.transform = `scale(${shot.clientWidth / 1280})`; }).observe(shot);
+  });
+</script>
+<script src="dev-toggle.js"></script>
+</body>
+</html>
